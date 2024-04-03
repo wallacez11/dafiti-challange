@@ -1,17 +1,20 @@
 ### 1 - Supone que en un repositorio GIT hiciste un commit y te olvidaste un archivo. Explicar como se soluciona si hiciste push, y como si aun no hiciste. De ser posible, buscar que quede solo un commit con los cambios.
 
-```
-Si lo has hecho push:
-git add archivo-que-me-olvide.txt
-git commit --amend --no-edit
-git push --force-with-lease ==> es una opción más segura que no sobrescribirá ningún trabajo en la rama remota si se agregaron más confirmaciones a la rama remota (por otro miembro del equipo o compañero de trabajo o lo que sea). Garantiza que no sobrescriba el trabajo de otra persona al forzarlo
-```
-
-Si no has hecho push:
+Si lo has hecho push
 
 ```
 git add archivo-que-me-olvide.txt
 git commit --amend --no-edit
+git push --force-with-lease
+
+```
+
+Si no has hecho push
+
+```
+git add archivo-que-me-olvide.txt
+git commit --amend --no-edit
+
 ```
 
 ### 2 - Tenes un sitio en tu computadora de desarrollo, y cuando entras desde el navegador, en la consola te aparece esto: “https://site.local/favicon.ico Failed to load resource: net::ERR_INSECURE_RESPONSE”. El archivo existe, el sitio debe cargar por https. Como lo solucionas?
