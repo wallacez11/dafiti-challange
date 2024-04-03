@@ -19,7 +19,10 @@ git commit --amend --no-edit
 
 ### 2 - Tenes un sitio en tu computadora de desarrollo, y cuando entras desde el navegador, en la consola te aparece esto: “https://site.local/favicon.ico Failed to load resource: net::ERR_INSECURE_RESPONSE”. El archivo existe, el sitio debe cargar por https. Como lo solucionas?
 
+```
 Si el archivo existe, este error suele estar relacionado con la configuración del certificado SSL, como solución intentar corregir el certificado SSL del sitio web, comprobar también si el servidor está configurado para exportar recursos vía https y, por último, intentar comprobar si Se requiere cualquier configuración de Cors.
+
+```
 
 ### 3 - Tenes un archivo comiteado en un repositorio GIT que deseas que quede ignorado. Que pasos debes realizar?
 
@@ -33,11 +36,17 @@ git push
 
 ### 4 - Explica las ventajas de cargar en tu sitio las librerias de terceros por GTM.
 
+```
 Tag manager ofrece una plataforma que facilita la implementación y gestión de etiquetas de terceros utilizadas en el sitio web, dando un mayor control sobre los datos de acceso o conversión.
+
+```
 
 ### 5 - Ejercicio
 
+```
 Archivo main.go
+
+```
 
 ### 6 - Mysql
 
